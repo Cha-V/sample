@@ -1,0 +1,22 @@
+<div style="text-align: center">
+  <h1>
+    Welcome to {{title}}
+  </h1>
+  Number 1 : <input type="number" name="number1" [(ngModel)]="number1">
+  <br>
+  Number 2 : git <input type="number" name="number2" [(ngModel)]="number2"> 
+  <br><br>
+  <button (click)="add()">+ ADD</button>
+  <br>
+  <button (click)="subtract()">- Subtract </button>
+  <br>
+  <button (click)="multiply()">* Multiply</button>
+  <br>
+  <button (click)="division()">/ Division</button>
+  <br>
+  <button (click)="modulus()">% Modules </button>
+  <br>
+  <h3>Result : {{number3}}</h3>
+</div>
+
+<router-outlet></router-outlet>
